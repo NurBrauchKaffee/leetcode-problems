@@ -1,4 +1,4 @@
-package ArrayOrString;
+package solutions.ArrayOrString;
 
 import java.util.Arrays;
 

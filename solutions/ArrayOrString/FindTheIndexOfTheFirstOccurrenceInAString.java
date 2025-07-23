@@ -1,4 +1,4 @@
-package ArrayOrString;
+package solutions.ArrayOrString;
 
 public class FindTheIndexOfTheFirstOccurrenceInAString {
     public static int strStr(String haystack, String needle) {

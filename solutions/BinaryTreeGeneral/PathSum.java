@@ -1,6 +1,7 @@
 package solutions.BinaryTreeGeneral;
 
 import utility.Pair;
+import utility.TreeNode;
 
 import java.util.HashSet;
 import java.util.List;

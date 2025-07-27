@@ -1,5 +1,7 @@
 package solutions.BinaryTreeGeneral;
 
+import utility.TreeNode;
+
 import java.util.List;
 
 public class InvertBinaryTree {

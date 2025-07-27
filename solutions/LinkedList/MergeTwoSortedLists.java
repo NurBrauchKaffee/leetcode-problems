@@ -1,5 +1,6 @@
 package solutions.LinkedList;
 
+import utility.ListNode;
 import utility.Pair;
 
 import java.util.List;

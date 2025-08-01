@@ -13,7 +13,7 @@ fun climbStairs(n: Int): Int {
     return cur
 }
 
-fun showcase(testcases: List<Int>) {
+private fun showcase(testcases: List<Int>) {
     for (testcase in testcases) {
         println("number of ways: ${climbStairs(testcase)}, steps: $testcase")
     }

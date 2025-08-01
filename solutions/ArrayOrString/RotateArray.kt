@@ -10,7 +10,7 @@ fun rotate(nums: IntArray, k: Int): Unit {
     }
 }
 
-fun showcase(testcases: List<Pair<IntArray, Int>>) {
+private fun showcase(testcases: List<Pair<IntArray, Int>>) {
     for (testcase in testcases) {
         print("original array: ${testcase.first.contentToString()}, rotations number: ${testcase.second}, ")
         rotate(testcase.first, testcase.second)

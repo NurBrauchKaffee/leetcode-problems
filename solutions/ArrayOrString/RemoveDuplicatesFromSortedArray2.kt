@@ -12,7 +12,7 @@ fun removeDuplicates(nums: IntArray): Int {
     return k
 }
 
-fun showcase(testcases: List<IntArray>) {
+private fun showcase(testcases: List<IntArray>) {
     for (testcase in testcases) {
         println("unique nums: ${removeDuplicates(testcase)}, nums: ${testcase.contentToString()}")
     }

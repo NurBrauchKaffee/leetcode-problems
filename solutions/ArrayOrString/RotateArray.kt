@@ -1,14 +1,12 @@
 package solutions.ArrayOrString
 
 fun rotate(nums: IntArray, k: Int): Unit {
-    val n = nums.size
-
-    var i = 0
-    var temp = nums[i]
-
-    for (j in 0..<n) {
-        nums[(i+k)%n] = nums[i]
-        i = (i+k)%n 
+    var temp: Int
+    for (j in 1..k) {
+        temp = nums[nums.size - 1]
+        for (i in nums.size - 1 downTo 0) {
+            nums[i] = if (i == 0) temp else nums[i - 1]
+        }
     }
 }
 

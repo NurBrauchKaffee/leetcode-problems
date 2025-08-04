@@ -1,7 +1,26 @@
 package solutions.TwoPointers
 
+import kotlin.math.min
+
 fun maxArea(height: IntArray): Int {
-    return 0
+    var p1 = 0
+    var p2 = height.lastIndex
+    var max = -1
+
+    while (p1 != p2) {
+        val area = (p2 - p1) * min(height[p1], height[p2])
+        if (area > max) {
+            max = area
+        }
+
+        if (height[p1] < height[p2]) {
+            p1++
+        } else {
+            p2--
+        }
+    }
+
+    return max
 }
 
 private fun showcase(testcases: List<IntArray>) {
